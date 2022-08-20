@@ -1,39 +1,129 @@
-.App {
-  text-align: center;
+@import url('https://fonts.googleapis.com/css2?family=Jost&display=swap');
+
+.logo{
+    font-family: Jost;
+    font-size: 24px;
+    font-weight: 700;
+    text-transform: uppercase;
+    }
+
+.search{
+        margin-right: 23px;
+    }
+
+.navbar{
+    color: #000000;
+    font-family: Jost;
+    font-size: 18px;
+    font-weight: 400;
+
+    }
+
+.navbar a:after{
+    content: '.';
+    margin: 0 3px;
+
+    }
+
+.header{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-image: url('./images/banner.jpg');
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.banner{
+    background-image: url('./images/banner.jpg');
+    padding: 167px 0;
+    background-position: 0 -67px;
+    
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-float infinite 3s ease-in-out;
-  }
+.banner-titulo{
+    margin: 0;
+    color: #373737;
+    font-family: Jost;
+    font-size: 64px;
+    font-weight: 500;
+    text-align: left;
 }
 
-.App-header {
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+.banner-titulo span{
+    font-weight: 700;
 }
 
-.App-link {
-  color: rgb(112, 76, 182);
+.banner-paragrafo{
+    color: #373737;
+    font-family: Jost;      
+    font-size: 18px;
+    font-weight: 400;
+    text-align: left;
 }
 
-@keyframes App-logo-float {
-  0% {
-    transform: translateY(0);
-  }
-  50% {
-    transform: translateY(10px);
-  }
-  100% {
-    transform: translateY(0px);
-  }
+.botao{
+    height: 52px;
+    box-shadow: -2px 5px 13px rgba(161, 83, 255, 0.15);
+    border-radius: 46px;
+    background-color: #ff6951;
+    width: 176px;
+    height: 27px;
+    color: #ffffff;
+    font-family: Jost;
+    font-size: 20px;
+    font-weight: 700;
+    text-align: center;
+    display: inline-block;
+    padding: 12px;
+    text-decoration: none;
 }
+
+.categoria{
+    padding: 100px 0;
+}
+
+.categoria-paragrafo{
+    color: #ff6951;
+    font-family: Jost;
+    font-size: 18px;
+    font-weight: 700;
+    text-align: center;
+    margin: 0;
+}
+
+.categoria-titulo{
+    margin-top: 0;
+    color: #373737;
+    font-family: Jost;
+    font-size: 36px;
+    font-weight: 500;
+    text-align: center;
+}
+
+.lista{
+    list-style: none;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    column-gap: 30px;
+    row-gap: 30px;
+    max-width: 1170px;
+    margin: 0 auto;
+}
+
+.lista li{
+    height: 286px;
+    box-shadow: -2px 5px 13px rgba(161, 83, 255, 0.15);
+    border-radius: 18px;
+    background-color: #ffffff;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0 50px;
+    text-align: center;
+}
+
+
+
+
+
+
+
